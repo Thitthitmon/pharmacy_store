@@ -10,7 +10,7 @@
         <tr>
             <td>{!! $type->name !!}</td>
             <td>
-                {!! Form::open(['route' => ['types.destroy', $type->id], 'method' => 'delete']) !!}
+                {!! Form::open(['route' => ['types.destroy', $type->id], 'method' => 'post']) !!}
                 <div class='btn-group'>
                     <a href="{!! route('types.show', [$type->id]) !!}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-eye-open"></i></a>
                     <a href="{!! route('types.edit', [$type->id]) !!}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-edit"></i></a>
